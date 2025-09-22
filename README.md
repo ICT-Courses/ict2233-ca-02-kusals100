@@ -1,18 +1,16 @@
-# Kusal Senevirathne - Personal Portfolio
+# Kusal Sanjeewa - Personal Portfolio
 
-![Portfolio Screenshot](<SCREENSHOT_IMAGE_PATH_HERE>) 
+![Portfolio Screenshot](<SCREENSHOT_IMAGE_PATH_HERE>)
 
 Welcome to the official repository for my personal portfolio. This project was developed as a part of the Web Application Development (ICT 2233) module, designed to showcase my skills in modern web technologies.
 
-**Live Demo:**  
+**Live Demo:** [**View My Live Portfolio**](https://kusals100.github.io/ict2233-ca-02-kusals100/)
 
 ---
 
 ## 🚀 About The Project
 
 This portfolio is a fully responsive single-page application built from the ground up using React. It features a clean design, smooth animations, and dynamically fetches my latest projects directly from the GitHub API.
-
----
 
 ---
 
@@ -32,8 +30,6 @@ Here are the key technologies and libraries used in this project:
 *   **Deployment:**
     *   [GitHub Pages](https://pages.github.com/)
 
-
-
 ---
 
 ## ⚙️ Getting Started
@@ -52,11 +48,11 @@ You need to have Node.js and npm installed on your machine.
 
 1.  Clone the repo
     ```sh
-    git clone https://github.com/your-github-username/your-repo-name.git
+    git clone https://github.com/KusalS100/ict2233-ca-02-kusals100.git
     ```
 2.  Navigate to the project directory
     ```sh
-    cd your-repo-name
+    cd ict2233-ca-02-kusals100
     ```
 3.  Install NPM packages
     ```sh
