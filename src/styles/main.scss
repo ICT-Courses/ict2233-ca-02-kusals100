@@ -1,0 +1,23 @@
+@use './variables' as *;
+
+
+//global body styles
+body {
+    font-family: $font-sans;
+}
+
+
+
+//custom scrollbar for a modern look
+::-webkit-scrollbar {
+    width:10px;
+}
+
+::-webkit-scrollbar-track {
+    background : $slate;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $accent-color;
+}
