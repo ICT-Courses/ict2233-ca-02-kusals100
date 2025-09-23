@@ -10,10 +10,10 @@ import Contact from './pages/Contact';
 function App() {
 
   return (
-    <div className='bg-[#0a192f] text-gray-300 min-h-screen'>
+    <div className='bg-[#0a192f] text-gray-300 min-h-screen font-sans'>
       
   <Navbar/>
-      <main>
+      <main className='pt-[80px]'>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/about' element={<About/>}/>

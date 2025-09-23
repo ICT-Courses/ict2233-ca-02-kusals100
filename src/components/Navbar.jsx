@@ -12,7 +12,7 @@ function Navbar() {
   const handleClick =  () => setNav(!nav);
 
   return (
-    <header className='fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-300 z-10 bg-[#0a192f]'>
+    <header className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 shadow-md z-10'>
     
     {/*Logo section */}
     <div>
