@@ -11,29 +11,32 @@ function Navbar() {
   //The function that change the state after clicking on the hamburger icon
   const handleClick =  () => setNav(!nav);
 
+  
+  const closeMobileMenu = () => setNav(false);
+
   return (
     <header className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 shadow-md z-10'>
     
     {/*Logo section */}
     <div>
-        <Link to="/" className="text-2xl font-bold text-[#64ffda]">
+        <Link to="home" smooth = {true} duration={500}  className="text-2xl font-bold text-[#64ffda] cursor-pointer">
           Kusal S.
         </Link>
       </div>
 
     {/*Menu for the Desktop */}
     <ul className='hidden md:flex'> {/*In mobile -> hidden | In Desktop -> flex */}
-      <li className="px-4 hover:text-[#64ffda] transition-colors duration-300">
-        <Link to='/'>Home</Link>
+      <li className="px-4 cursor-pointer hover:text-[#64ffda] transition-colors duration-300">
+        <Link to='home' smooth={true} duration={500} >Home</Link>
       </li>    
-      <li className='px-4 hover:text-[#64ffda] transition-colors duration-300'>
-        <Link to ="/about">About</Link>
+      <li className='px-4 cursor-pointer hover:text-[#64ffda] transition-colors duration-300'>
+        <Link to ="about" smooth={true} duration={500}>About</Link>
       </li>
-      <li className="px-4 hover:text-[#64ffda] transition-colors duration-300">
-          <Link to="/portfolio">Portfolio</Link>
+      <li className="px-4 cursor-pointer hover:text-[#64ffda] transition-colors duration-300">
+          <Link to="portfolio" smooth={true} duration={500}>Portfolio</Link>
         </li>
-        <li className="px-4 hover:text-[#64ffda] transition-colors duration-300">
-          <Link to="/Contact">Contact</Link>
+        <li className="px-4 cursor-pointer hover:text-[#64ffda] transition-colors duration-300">
+          <Link to="contact" smooth={true} duration={500}>Contact</Link>
         </li>
     </ul>
 
@@ -51,16 +54,16 @@ function Navbar() {
         }
       >
         <li className="py-6 text-4xl hover:text-[#64ffda]">
-          <Link onClick={handleClick} to="/">Home</Link>
+          <Link onClick={closeMobileMenu} to ="home" smooth={true} duration={500}>Home</Link>
         </li>
         <li className="py-6 text-4xl hover:text-[#64ffda]">
-          <Link onClick={handleClick} to="/about">About</Link>
+          <Link onClick={closeMobileMenu} to ="about" smooth={true} duration={500}>About</Link>
         </li>
         <li className="py-6 text-4xl hover:text-[#64ffda]">
-          <Link onClick={handleClick} to="/portfolio">Portfolio</Link>
+          <Link onClick={closeMobileMenu} to ="portfolio" smooth={true} duration={500}>Portfolio</Link>
         </li>
         <li className="py-6 text-4xl hover:text-[#64ffda]">
-          <Link onClick={handleClick} to="/Contact">Contact</Link>
+          <Link onClick={closeMobileMenu} to ="contact" smooth={true} duration={500}>Contact</Link>
         </li>
       </ul>
 
