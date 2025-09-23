@@ -11,7 +11,7 @@ function Navbar() {
   //The function that change the state after clicking on the hamburger icon
   const handleClick =  () => setNav(!nav);
 
-  
+  // A function to explicitly close the mobile menu, used when a link is clicked
   const closeMobileMenu = () => setNav(false);
 
   return (
