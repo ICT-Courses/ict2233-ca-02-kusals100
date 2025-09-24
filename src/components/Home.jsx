@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 
 function Home() {
@@ -52,7 +52,7 @@ function Home() {
           <Link to="/portfolio">
             <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#64ffda] hover:border-[#64ffda] hover:text-[#0a192f] transition-all duration-300">
               View My Work
-              <span className="group-hover:rotate-90 duration-300 ml-3">
+              <span className="ml-3 duration-300 group-hover:rotate-90">
                 &rarr;
               </span>
             </button>
