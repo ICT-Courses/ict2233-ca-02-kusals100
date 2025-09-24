@@ -48,7 +48,7 @@ function Home() {
           animate = {{ opacity: 1, y: 0 }}
           transition = {{ duration: 0.5, delay: 1 }}
         >
-          <Link to="/portfolio">
+          <Link to="/work">
             <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#64ffda] hover:border-[#64ffda] hover:text-[#0a192f] transition-all duration-300">
               View My Work
               <span className="ml-3 duration-300 group-hover:rotate-90">
