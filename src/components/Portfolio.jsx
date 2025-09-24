@@ -1,7 +1,32 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
-    function Portfolio() {
+function Portfolio() {
 
+  const [repos, setRepos] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+
+  useEffect(() => {
+    const fetchRepos = async () => {
+      try {
+        
+        const response = await fetch('https://api.github.com/users/Kusals100/repos?per_page=6&sort=pushed');
+        if (!response.ok) {
+          throw new Error('Failed to fetch data from GitHub API');
+        }
+        const data = await response.json();
+        setRepos(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchRepos();
+  }, []);
+  
       return (
         <div name='portfolio' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
           <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
