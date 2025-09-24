@@ -20,7 +20,7 @@ function Navbar() {
     {/*Logo section */}
     <div>
         <Link to="home" smooth = {true} duration={500}  className="text-2xl font-bold text-[#64ffda] cursor-pointer">
-          Kusal S.
+          Kusal 
         </Link>
       </div>
 
@@ -33,7 +33,7 @@ function Navbar() {
         <Link to ="about" smooth={true} duration={500}>About</Link>
       </li>
       <li className="px-4 cursor-pointer hover:text-[#64ffda] transition-colors duration-300">
-          <Link to="portfolio" smooth={true} duration={500}>Portfolio</Link>
+          <Link to="work" smooth={true} duration={500}>My Work</Link>
         </li>
         <li className="px-4 cursor-pointer hover:text-[#64ffda] transition-colors duration-300">
           <Link to="contact" smooth={true} duration={500}>Contact</Link>
@@ -41,7 +41,7 @@ function Navbar() {
     </ul>
 
     {/* Hamburger Menu Icon for MOBILE */}
-    <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
+    <div onClick={handleClick} className="z-10 cursor-pointer md:hidden">
         {!nav ? <FaBars /> : <FaTimes />} {/*According to the nav state, icon is changed */}
       </div>
 
@@ -60,7 +60,7 @@ function Navbar() {
           <Link onClick={closeMobileMenu} to ="about" smooth={true} duration={500}>About</Link>
         </li>
         <li className="py-6 text-4xl hover:text-[#64ffda]">
-          <Link onClick={closeMobileMenu} to ="portfolio" smooth={true} duration={500}>Portfolio</Link>
+          <Link onClick={closeMobileMenu} to ="work" smooth={true} duration={500}>My Work</Link>
         </li>
         <li className="py-6 text-4xl hover:text-[#64ffda]">
           <Link onClick={closeMobileMenu} to ="contact" smooth={true} duration={500}>Contact</Link>
