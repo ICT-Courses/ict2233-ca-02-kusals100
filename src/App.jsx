@@ -11,10 +11,12 @@ function App() {
     <div className='bg-[#0a192f] text-gray-300 min-h-screen font-sans'>
       <Navbar />
       <SocialLinks />
+    <main>
       <Home />
       <About />
       <Portfolio />
       <Contact />
+    </main>
       <Footer />
     </div>
   );

@@ -4,7 +4,7 @@ function Contact() {
   
   // NOTE: We don't handlie form submission logic in this assignment.
   return (
-    <div name ='contact' className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-4'>
+    <div name ='contact' className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-4 pt-[100px]'>
       <div className ='flex flex-col max-w-[600px] w-full'>
         <div className='pb-8'>
           <p className='inline text-4xl font-bold text-gray-300 border-b-4 border-pink-600'>

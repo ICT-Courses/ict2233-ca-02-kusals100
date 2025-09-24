@@ -41,7 +41,7 @@ function Portfolio() {
   }
 
   return (
-    <div name='portfolio' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
+    <div name='portfolio' className='w-full md:h-screen text-gray-300 bg-[#0a192f] pt-[100px]'>
       <div className ='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className ='pb-8'>
           <p className ='inline text-4xl font-bold text-gray-300 border-b-4 border-pink-600'>
