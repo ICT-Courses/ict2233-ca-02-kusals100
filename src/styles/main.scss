@@ -1,23 +1,40 @@
-@use './variables' as *;
+// Defines Color Variables for Both Themes
+:root {
+  --color-bg: #f8fafc; // Light Mode: Almost white background
+  --color-text-primary: #0f172a; // Light Mode: Very dark blue text
+  --color-text-secondary: #64748b; // Light Mode: Slate gray text
+  --color-accent: #d946ef; // Light Mode: A vibrant fuchsia accent
+  --color-border: #d946ef; // Light Mode: Border color
+}
 
 
-//global body styles
+[data-theme='dark'] {
+  --color-bg: #0a192f; // Dark Mode:  original navy background
+  --color-text-primary: #ccd6f6; // Dark Mode: original light slate text
+  --color-text-secondary: #8892b0; // Dark Mode:  original slate text
+  --color-accent: #64ffda; // Dark Mode: original neon green accent
+  --color-border: #64ffda; // Dark Mode: Border color
+}
+
+
+// Apply the variables to the body
 body {
-    font-family: $font-sans;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
 
-//custom scrollbar for a modern look
-::-webkit-scrollbar {
-    width:10px;
-}
-
+//  Make sure scrollbar also uses theme colors
 ::-webkit-scrollbar-track {
-    background : $slate;
-    border-radius: 5px;
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-secondary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: $accent-color;
+  background: var(--color-accent);
 }
