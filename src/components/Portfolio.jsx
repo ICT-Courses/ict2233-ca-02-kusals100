@@ -44,10 +44,10 @@ function Portfolio() {
     <div name='portfolio' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
       <div className ='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className ='pb-8'>
-          <p className='inline text-4xl font-bold text-gray-300 border-b-4 border-pink-600'>
+          <p className ='inline text-4xl font-bold text-gray-300 border-b-4 border-pink-600'>
             Portfolio
           </p>
-          <p className='py-6'>// Check out some of my recent work</p>
+          <p className='py-6'>Check out some of my recent work</p>
         </div>
 
         {/* Grid Container for Cards */}
@@ -60,8 +60,8 @@ function Portfolio() {
               className={`shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto ${styles.contentDiv}`}
             >
               {/* Hover Effects */}
-              <div className='p-4 text-center transition-opacity duration-300 opacity-0 group-hover:opacity-100'>
-                <span className='text-2xl font-bold tracking-wider text-white'>
+              <div className = 'p-4 text-center transition-opacity duration-300 opacity-0 group-hover:opacity-100'>
+                <span className = 'text-2xl font-bold tracking-wider text-white'>
                   {repo.name}
                 </span>
                 <div className = 'pt-8 text-center'>
@@ -84,5 +84,6 @@ function Portfolio() {
     </div>
   );
 }
+
 
 export default Portfolio;
