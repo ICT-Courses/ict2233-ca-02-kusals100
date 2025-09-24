@@ -41,14 +41,14 @@ const SocialLinks = () => {
           <li
             key={id}
             className ={
-              'flex justify-between items-center w-40 h-14 px-4 bg-gray-500 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300' +
+              'flex justify-between items-center w-40 h-14 px-4 bg-text-secondary ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300' +
               ' ' +
               style
             }
           >
             <a
               href ={href}
-              className='flex items-center justify-between w-full text-white'
+              className='flex items-center justify-between w-full text-background'
               target='_blank'
               rel='noopener noreferrer'
             >

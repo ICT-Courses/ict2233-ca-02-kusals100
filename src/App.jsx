@@ -8,7 +8,7 @@ import SocialLinks from './components/SocialMediaLinks';
 
 function App() {
   return (
-    <div className='bg-[#0a192f] text-gray-300 min-h-screen font-sans'>
+    <div className='min-h-screen font-sans bg-background text-text-primary '>
       <Navbar />
       <SocialLinks />
     <main>

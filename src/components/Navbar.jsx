@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-scroll';
 import { FaBars, FaTimes} from 'react-icons/fa';
-
+import ThemeToggle from './ThemeToggle';
 
 function Navbar() {
 
@@ -15,29 +15,30 @@ function Navbar() {
   const closeMobileMenu = () => setNav(false);
 
   return (
-    <header className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 shadow-md z-10'>
+    <header className='fixed w-full h-[80px] flex justify-between items-center px-4  shadow-md z-10'>
     
     {/*Logo section */}
     <div>
-        <Link to="home" smooth = {true} duration={500}  className="text-2xl font-bold text-[#64ffda] cursor-pointer">
-          Kusal 
+        <Link to="home" smooth = {true} duration={500}  className="text-2xl font-bold cursor-pointer text-accent">
+          Kusal   
         </Link>
       </div>
 
     {/*Menu for the Desktop */}
     <ul className='hidden md:flex'> {/*In mobile -> hidden | In Desktop -> flex */}
-      <li className="px-4 cursor-pointer hover:text-[#64ffda] transition-colors duration-300">
+      <li className="px-4 cursor-pointer hover:text-accent transition-colors duration-300">
         <Link to='home' smooth={true} duration={500} >Home</Link>
       </li>    
-      <li className='px-4 cursor-pointer hover:text-[#64ffda] transition-colors duration-300'>
+      <li className='px-4 cursor-pointer hover:text-accent transition-colors duration-300'>
         <Link to ="about" smooth={true} duration={500}>About</Link>
       </li>
-      <li className="px-4 cursor-pointer hover:text-[#64ffda] transition-colors duration-300">
+      <li className="px-4 cursor-pointer hover:text-accent transition-colors duration-300">
           <Link to="work" smooth={true} duration={500}>My Work</Link>
         </li>
-        <li className="px-4 cursor-pointer hover:text-[#64ffda] transition-colors duration-300">
+        <li className="px-4 cursor-pointer hover:text-accent transition-colors duration-300">
           <Link to="contact" smooth={true} duration={500}>Contact</Link>
         </li>
+        <ThemeToggle />
     </ul>
 
     {/* Hamburger Menu Icon for MOBILE */}
@@ -50,19 +51,19 @@ function Navbar() {
         className={
           !nav
             ? 'hidden' // If nav = false, Hide the menu 
-            : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center' // If nav = true ,Show the full-screen menu 
+            : 'absolute top-0 left-0 w-full h-screen bg-background flex flex-col justify-center items-center' // If nav = true ,Show the full-screen menu 
         }
       >
-        <li className="py-6 text-4xl hover:text-[#64ffda]">
+        <li className="py-6 text-4xl hover:text-accent">
           <Link onClick={closeMobileMenu} to ="home" smooth={true} duration={500}>Home</Link>
         </li>
-        <li className="py-6 text-4xl hover:text-[#64ffda]">
+        <li className="py-6 text-4xl hover:text-accent">
           <Link onClick={closeMobileMenu} to ="about" smooth={true} duration={500}>About</Link>
         </li>
-        <li className="py-6 text-4xl hover:text-[#64ffda]">
+        <li className="py-6 text-4xl hover:text-accent">
           <Link onClick={closeMobileMenu} to ="work" smooth={true} duration={500}>My Work</Link>
         </li>
-        <li className="py-6 text-4xl hover:text-[#64ffda]">
+        <li className="py-6 text-4xl hover:text-accent">
           <Link onClick={closeMobileMenu} to ="contact" smooth={true} duration={500}>Contact</Link>
         </li>
       </ul>
