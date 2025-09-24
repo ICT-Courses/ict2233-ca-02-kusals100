@@ -1,4 +1,6 @@
 import React from 'react';
+import { HiOutlineMail } from 'react-icons/hi'; 
+import { FaGithub, FaLinkedin } from 'react-icons/fa'; 
 
 function Contact() {
   
@@ -13,6 +15,21 @@ function Contact() {
           <p className='py-4 text-gray-300'>Submit the form below or shoot me an email</p>
         </div>
         
+        {/*Social Media icons in only for mobile view*/}
+        <div className= 'flex justify-center py-4 lg:hidden'>
+            <a className ="px-4 text-gray-300 hover:text-pink-600" href="https://www.linkedin.com/in/kusal-sanjeewa-2b251a355/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={40} />
+            </a>
+            <a className= "px-4 text-gray-300 hover:text-pink-600" href="https://github.com/Kusals100" target="_blank" rel="noopener noreferrer">
+                <FaGithub size={40} />
+            </a>
+            <a className = "px-4 text-gray-300 hover:text-pink-600" href="mailto:sanjeewakusal100@gmail.com">
+              
+                <HiOutlineMail size={40} />
+            </a>
+        </div>
+
+
         <form method='POST' action="https://getform.io/f/YOUR_UNIQUE_ENDPOINT" className='flex flex-col w-full'>
           <input 
             className ='bg-[#ccd6f6] p-2 text-gray-800' 
@@ -22,8 +39,8 @@ function Contact() {
           />
 
           <input 
-            className='my-4 p-2 bg-[#ccd6f6] text-gray-800' 
-            type="email" 
+            className ='my-4 p-2 bg-[#ccd6f6] text-gray-800' 
+            type ="email" 
             placeholder='Email' 
             name='email' 
           />
