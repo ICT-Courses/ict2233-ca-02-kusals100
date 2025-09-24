@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 
 function Home() {
@@ -31,7 +31,7 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          I'm an aspiring Full-Stack Developer.
+          I build digital solutions.
         </motion.h2>
         <motion.p 
           className ="text-[#8892b0] py-4 max-w-[700px]"
@@ -39,9 +39,8 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          I’m focused on building responsive and user-friendly web applications.
-          Currently, I'm diving deep into the MERN stack and exploring modern
-          frontend technologies.
+          I specialize in crafting elegant and efficient web applications, 
+          transforming complex challenges into seamless user experiences.
         </motion.p>
         
         <motion.div
@@ -52,7 +51,7 @@ function Home() {
           <Link to="/portfolio">
             <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#64ffda] hover:border-[#64ffda] hover:text-[#0a192f] transition-all duration-300">
               View My Work
-              <span className="group-hover:rotate-90 duration-300 ml-3">
+              <span className="ml-3 duration-300 group-hover:rotate-90">
                 &rarr;
               </span>
             </button>
