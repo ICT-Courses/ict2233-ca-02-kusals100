@@ -31,7 +31,7 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          I'm an aspiring Full-Stack Developer.
+          I build digital solutions.
         </motion.h2>
         <motion.p 
           className ="text-[#8892b0] py-4 max-w-[700px]"
@@ -39,9 +39,8 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          I’m focused on building responsive and user-friendly web applications.
-          Currently, I'm diving deep into the MERN stack and exploring modern
-          frontend technologies.
+          I specialize in crafting elegant and efficient web applications, 
+          transforming complex challenges into seamless user experiences.
         </motion.p>
         
         <motion.div
